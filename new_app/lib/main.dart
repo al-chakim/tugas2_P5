@@ -46,7 +46,7 @@ class _MyAppState extends State<MyApp> {
                 SizedBox(width: 170,),
                 Text(
                   '065119167',
-                  style: satu
+                  style: dua
                 ),
                 SizedBox(width: 8,),
                 Icon(
@@ -66,7 +66,7 @@ class _MyAppState extends State<MyApp> {
                 SizedBox(width: 170,),
                 Text(
                   'Aktif',
-                  style: satu
+                  style: dua
                 )
               ],
             ),
@@ -80,7 +80,21 @@ class _MyAppState extends State<MyApp> {
                 SizedBox(width: 115,),
                 Text(
                   'Ilmu Komputer',
+                  style: dua,
+                )
+              ],
+            ),
+            SizedBox(height: 5,),
+            Row(
+              children: [
+                Text(
+                  'Jenjang pendidikan',
                   style: satu,
+                ),
+                SizedBox(width: 160,),
+                Text(
+                  'S1',
+                  style: dua,
                 )
               ],
             )

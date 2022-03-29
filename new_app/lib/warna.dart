@@ -4,6 +4,11 @@ Color warna1 = Color(0xffFFFFFF);
 
 TextStyle satu = TextStyle(
   color: warna1,
-  // fontWeight: FontWeight.w700,
-  // fontSize: 16,
+  //fontSize: 15
+);
+
+TextStyle dua = TextStyle(
+  color: warna1,
+  //fontSize: 15,
+  fontWeight: FontWeight.w700
 );
