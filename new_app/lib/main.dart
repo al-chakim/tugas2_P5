@@ -35,6 +35,16 @@ class MyApp extends StatelessWidget {
                     icon: Icon(Icons.edit)
                   )
                 ],
+              ),
+              SizedBox(height: 30,),
+              Column(
+                children: [
+                  Image.asset(
+                    'assets/profile.png',
+                    width: 135,
+                    height: 135,
+                  )
+                ],
               )
             ],
           )
