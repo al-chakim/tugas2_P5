@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:new_app/warna.dart';
 
 void main() => runApp(MyApp());
 
@@ -40,16 +41,12 @@ class _MyAppState extends State<MyApp> {
               children: [
                 Text(
                   'NPM',
-                  style: TextStyle(
-                    color: Colors.white
-                  ),
+                  style: satu
                 ),
                 SizedBox(width: 170,),
                 Text(
                   '065119167',
-                  style: TextStyle(
-                    color: Colors.white
-                  ),
+                  style: satu
                 ),
                 SizedBox(width: 8,),
                 Icon(
@@ -64,16 +61,12 @@ class _MyAppState extends State<MyApp> {
               children: [
                 Text(
                   'Status Keatifan',
-                  style: TextStyle(
-                    color: Colors.white
-                  ),
+                  style: satu
                 ),
                 SizedBox(width: 170,),
                 Text(
                   'Aktif',
-                  style: TextStyle(
-                    color: Colors.white
-                  ),
+                  style: satu
                 )
               ],
             ),
@@ -82,13 +75,12 @@ class _MyAppState extends State<MyApp> {
               children: [
                 Text(
                   'Program Studi',
-                  style: TextStyle(
-                    color: Colors.white
-                  ),
+                  style: satu
                 ),
                 SizedBox(width: 115,),
                 Text(
-                  'Ilmu Komputer'
+                  'Ilmu Komputer',
+                  style: satu,
                 )
               ],
             )
