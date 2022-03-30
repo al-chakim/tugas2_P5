@@ -16,19 +16,21 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
 
+
+
     Widget kontener(){
       return Container(
         padding: EdgeInsets.only(
           top: 15,
           bottom: 15,
-          left: 23,
-          right: 15,
+          left: 19,
+          right: 12,
         ),
         margin: EdgeInsets.only(
           top: 15,
           bottom: 5,
-          right: 25,
-          left: 25
+          right: 18,
+          left: 18
         ),
         decoration: BoxDecoration(
           color: Color(0xff1BA098),
@@ -43,7 +45,7 @@ class _MyAppState extends State<MyApp> {
                   'NPM',
                   style: satu
                 ),
-                SizedBox(width: 170,),
+                SizedBox(width: 195,),
                 Text(
                   '065119167',
                   style: dua
@@ -56,14 +58,22 @@ class _MyAppState extends State<MyApp> {
                 )
               ],
             ),
-            SizedBox(height: 5,),
+            //SizedBox(height: 3,),
+            Divider(
+              color: Colors.white,
+              thickness: 1,
+              height: 5,
+              indent: 0,
+              endIndent: 0,
+            ),
+            SizedBox(height: 3,),
             Row(
               children: [
                 Text(
                   'Status Keatifan',
                   style: satu
                 ),
-                SizedBox(width: 170,),
+                SizedBox(width: 195,),
                 Text(
                   'Aktif',
                   style: dua
@@ -77,7 +87,7 @@ class _MyAppState extends State<MyApp> {
                   'Program Studi',
                   style: satu
                 ),
-                SizedBox(width: 115,),
+                SizedBox(width: 140,),
                 Text(
                   'Ilmu Komputer',
                   style: dua,
@@ -91,7 +101,7 @@ class _MyAppState extends State<MyApp> {
                   'Jenjang pendidikan',
                   style: satu,
                 ),
-                SizedBox(width: 160,),
+                SizedBox(width: 186,),
                 Text(
                   'S1',
                   style: dua,
@@ -102,7 +112,27 @@ class _MyAppState extends State<MyApp> {
         ),
       );
     }
-    
+
+    Widget teks(String tulis, String baca){
+      return Padding(
+        padding: const EdgeInsets.only(left: 22, right: 22),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            //SizedBox(width: 20,),
+            Text(
+              tulis,
+              style: tiga,
+            ),
+            Text(
+              baca,
+              style: empat,
+            )
+          ],
+        ),
+      );
+    }
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
@@ -157,6 +187,13 @@ class _MyAppState extends State<MyApp> {
               ),
               SizedBox(height: 20,),
               kontener(),
+              SizedBox(height: 20,),
+              Column(
+                children: [
+                  teks('Nama Lengkap','Muchammad Amru Al-Chakim'),
+                  Divider()
+                ],
+              )
             ],
           )
         ),
