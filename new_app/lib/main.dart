@@ -61,12 +61,12 @@ class _MyAppState extends State<MyApp> {
             //SizedBox(height: 3,),
             Divider(
               color: Colors.white,
-              thickness: 1,
+              thickness: 1.5,
               height: 5,
               indent: 0,
               endIndent: 0,
             ),
-            SizedBox(height: 3,),
+            SizedBox(height: 5,),
             Row(
               children: [
                 Text(
@@ -79,6 +79,13 @@ class _MyAppState extends State<MyApp> {
                   style: dua
                 )
               ],
+            ),
+            Divider(
+              color: Colors.white,
+              thickness: 1.5,
+              height: 5,
+              indent: 0,
+              endIndent: 0,
             ),
             SizedBox(height: 5,),
             Row(
@@ -94,6 +101,13 @@ class _MyAppState extends State<MyApp> {
                 )
               ],
             ),
+            Divider(
+              color: Colors.white,
+              thickness: 1.5,
+              height: 5,
+              indent: 0,
+              endIndent: 0,
+            ),
             SizedBox(height: 5,),
             Row(
               children: [
@@ -107,7 +121,14 @@ class _MyAppState extends State<MyApp> {
                   style: dua,
                 )
               ],
-            )
+            ),
+            Divider(
+              color: Colors.white,
+              thickness: 1.5,
+              height: 5,
+              indent: 0,
+              endIndent: 0,
+            ),
           ],
         ),
       );
@@ -115,7 +136,7 @@ class _MyAppState extends State<MyApp> {
 
     Widget teks(String tulis, String baca){
       return Padding(
-        padding: const EdgeInsets.only(left: 22, right: 22),
+        padding: const EdgeInsets.only(left: 23, right: 23),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -127,7 +148,7 @@ class _MyAppState extends State<MyApp> {
             Text(
               baca,
               style: empat,
-            )
+            ),
           ],
         ),
       );
@@ -191,7 +212,13 @@ class _MyAppState extends State<MyApp> {
               Column(
                 children: [
                   teks('Nama Lengkap','Muchammad Amru Al-Chakim'),
-                  Divider()
+                  Divider(
+                    height: 1,
+                    thickness: 1,
+                    indent: 10,
+                    endIndent: 10,
+                    color: Colors.black,
+                  )
                 ],
               )
             ],
