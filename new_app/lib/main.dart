@@ -136,7 +136,7 @@ class _MyAppState extends State<MyApp> {
 
     Widget teks(String tulis, String baca){
       return Padding(
-        padding: const EdgeInsets.only(left: 23, right: 23),
+        padding: const EdgeInsets.only(left: 30, right: 30),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -212,13 +212,71 @@ class _MyAppState extends State<MyApp> {
               Column(
                 children: [
                   teks('Nama Lengkap','Muchammad Amru Al-Chakim'),
+                  SizedBox(height: 2,),
+                  Divider(
+                    height: 10,
+                    thickness: 1,
+                    indent: 25,
+                    endIndent: 25,
+                    color: Colors.black,
+                  ),
+                  SizedBox(height: 5,),
+                  teks('Panggilan', 'Chakim'),
+                  SizedBox(height: 2,),
+                  Divider(
+                    height: 10,
+                    thickness: 1,
+                    indent: 25,
+                    endIndent: 25,
+                    color: Colors.black,
+                  ),
+                  SizedBox(height: 5,),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 30),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        Text(
+                          'Alamat',
+                          style: tiga,
+                        ),
+                        SizedBox(height: 8,),
+                        Text(
+                          'Jl. Warga Mulya I no. 15, Kel. Pasir Mulya \nKec. Bogor Barat, Kota Bogor, Jawa Barat',
+                          style: empat,
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(height: 2,),
+                  Divider(
+                    height: 10,
+                    thickness: 1,
+                    indent: 25,
+                    endIndent: 25,
+                    color: Colors.black,
+                  ),
+                  //SizedBox(height: 2,),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 13),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        teks('Kartu Mahasiswa',''),
+                        IconButton(
+                          onPressed: () {}, 
+                          icon: Icon(Icons.badge, size: 18,)
+                        ),
+                      ],
+                    ),
+                  ),
                   Divider(
                     height: 1,
                     thickness: 1,
-                    indent: 10,
-                    endIndent: 10,
+                    indent: 25,
+                    endIndent: 25,
                     color: Colors.black,
-                  )
+                  ),
                 ],
               )
             ],
