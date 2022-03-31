@@ -5,7 +5,6 @@ void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
 
-
   @override
   State<MyApp> createState() => _MyAppState();
 }
@@ -13,8 +12,6 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-
-
 
     Widget kontener(){
       return Container(
