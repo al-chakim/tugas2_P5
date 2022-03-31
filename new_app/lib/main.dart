@@ -31,7 +31,7 @@ class _MyAppState extends State<MyApp> {
           left: 18
         ),
         decoration: BoxDecoration(
-          color: Color(0xff1BA098),
+          color: Color(0xff00458B),
           borderRadius: BorderRadius.circular(15)
         ),
         child: Column(
@@ -155,6 +155,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: Color(0xff1A2C42),
         body: SafeArea(
           child: ListView(
             children: [
@@ -164,19 +165,26 @@ class _MyAppState extends State<MyApp> {
                 children: [
                   IconButton(
                     onPressed: (){}, 
-                    icon: Icon(Icons.arrow_back)
+                    icon: Icon(
+                      Icons.arrow_back,
+                      color: warna1,
+                    )
                   ),
                   //SizedBox(width: 5),
                   Text(
                     'Profile',
                     style: TextStyle(
                       fontSize: 19,
-                      fontWeight: FontWeight.w600
+                      fontWeight: FontWeight.w600,
+                      color: warna1
                     ),
                   ),
                   IconButton(
                     onPressed: (){}, 
-                    icon: Icon(Icons.edit)
+                    icon: Icon(
+                      Icons.edit,
+                      color: warna1,
+                    )
                   )
                 ],
               ),
@@ -193,14 +201,17 @@ class _MyAppState extends State<MyApp> {
                     'Muchammad Amru Al-Chakim',
                     style: TextStyle(
                       fontSize: 20,
-                      fontWeight: FontWeight.w500
+                      fontWeight: FontWeight.w500,
+                      color: warna1
                     ),
                   ),
                   Text(
                     'amru.065119167@unpak.ac.id',
+                    style: satu,
                   ),
                   Text(
                     '085775190991',
+                    style: satu,
                   )
                 ],
               ),
@@ -216,7 +227,7 @@ class _MyAppState extends State<MyApp> {
                     thickness: 1,
                     indent: 25,
                     endIndent: 25,
-                    color: Colors.black,
+                    color: Colors.white,
                   ),
                   SizedBox(height: 5,),
                   teks('Panggilan', 'Chakim'),
@@ -226,7 +237,7 @@ class _MyAppState extends State<MyApp> {
                     thickness: 1,
                     indent: 25,
                     endIndent: 25,
-                    color: Colors.black,
+                    color: Colors.white,
                   ),
                   SizedBox(height: 5,),
                   Padding(
@@ -252,7 +263,7 @@ class _MyAppState extends State<MyApp> {
                     thickness: 1,
                     indent: 25,
                     endIndent: 25,
-                    color: Colors.black,
+                    color: Colors.white,
                   ),
                   //SizedBox(height: 2,),
                   Padding(
@@ -263,7 +274,11 @@ class _MyAppState extends State<MyApp> {
                         teks('Kartu Mahasiswa',''),
                         IconButton(
                           onPressed: () {}, 
-                          icon: Icon(Icons.badge, size: 18,)
+                          icon: Icon(
+                            Icons.badge, 
+                            size: 20, 
+                            color: Color(0xffFFFFFFF),
+                          )
                         ),
                       ],
                     ),

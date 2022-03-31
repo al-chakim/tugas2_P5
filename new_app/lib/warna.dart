@@ -15,12 +15,12 @@ TextStyle dua = TextStyle(
 );
 
 TextStyle tiga = TextStyle(
-  color: warna2,
+  color: warna1,
   fontSize: 15,
   fontWeight: FontWeight.w700
 );
 
 TextStyle empat = TextStyle(
-  color: warna2,
+  color: warna1,
   //fontSize: 15
 );
